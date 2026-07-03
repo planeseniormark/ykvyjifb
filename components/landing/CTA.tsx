@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Phone, Mail } from "lucide-react";
+import { ArrowRight, Mail, Send, MessageCircle } from "lucide-react";
 
 export default function CTA() {
   return (
@@ -27,36 +27,57 @@ export default function CTA() {
               Готовы <span className="gold-text">начать</span>?
             </h2>
             <p className="text-text-secondary text-base sm:text-lg max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed">
-              Подключите PlateFlow за 3 дня. Мы настроим систему, обучим персонал
-              и будем на связи 24/7.
+              Запустим PlateFlow за 7 дней по 50% предоплате. Настроим систему,
+              обучим персонал и будем на связи 24/7.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 sm:mb-12">
               <a
-                href="tel:+79001234567"
+                href="https://t.me/OSIPOWLAD"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-xl animate-shimmer text-bg-dark font-bold text-base sm:text-lg w-full sm:w-auto"
               >
-                Оставить заявку
-                <ArrowRight size={20} />
+                <Send size={18} />
+                Написать в Telegram
               </a>
               <a
-                href="mailto:hello@plateflow.ru"
+                href="https://wa.me/79950961577"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-xl border border-white/10 text-white font-semibold text-base sm:text-lg hover:bg-white/5 transition-colors w-full sm:w-auto"
               >
-                <Mail size={18} />
-                Написать нам
+                <MessageCircle size={18} />
+                WhatsApp
               </a>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 text-text-muted text-sm">
-              <div className="flex items-center gap-2">
-                <Phone size={16} className="text-primary" />
-                <span>+7 (900) 123-45-67</span>
-              </div>
-              <div className="flex items-center gap-2">
+              <a
+                href="https://t.me/OSIPOWLAD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <Send size={16} className="text-primary" />
+                <span>@OSIPOWLAD</span>
+              </a>
+              <a
+                href="https://wa.me/79950961577"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <MessageCircle size={16} className="text-primary" />
+                <span>+7 (995) 096-15-77</span>
+              </a>
+              <a
+                href="mailto:plateflow@yolo-agency.ru"
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
                 <Mail size={16} className="text-primary" />
-                <span>hello@plateflow.ru</span>
-              </div>
+                <span>plateflow@yolo-agency.ru</span>
+              </a>
             </div>
           </div>
         </motion.div>

@@ -20,12 +20,12 @@ const footerLinks = [
     ],
   },
   {
-    title: "Поддержка",
+    title: "Связаться",
     links: [
-      { label: "Документация", href: "#" },
+      { label: "Telegram @OSIPOWLAD", href: "https://t.me/OSIPOWLAD" },
+      { label: "WhatsApp", href: "https://wa.me/79950961577" },
+      { label: "plateflow@yolo-agency.ru", href: "mailto:plateflow@yolo-agency.ru" },
       { label: "FAQ", href: "#" },
-      { label: "Telegram", href: "#" },
-      { label: "WhatsApp", href: "#" },
     ],
   },
 ];

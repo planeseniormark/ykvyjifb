@@ -63,18 +63,18 @@ export default function Hero() {
 
             <div className="mt-8 sm:mt-12 flex items-center gap-6 sm:gap-8 text-text-muted text-xs sm:text-sm">
               <div className="flex items-center gap-2">
-                <span className="text-primary font-bold text-xl sm:text-2xl">150+</span>
-                <span>ресторанов</span>
+                <span className="text-primary font-bold text-xl sm:text-2xl">7</span>
+                <span>дней на запуск</span>
               </div>
               <div className="w-px h-8 bg-white/10" />
               <div className="flex items-center gap-2">
-                <span className="text-primary font-bold text-xl sm:text-2xl">50K+</span>
-                <span>заказов</span>
+                <span className="text-primary font-bold text-xl sm:text-2xl">50%</span>
+                <span>предоплата</span>
               </div>
               <div className="w-px h-8 bg-white/10" />
               <div className="flex items-center gap-2">
-                <span className="text-primary font-bold text-xl sm:text-2xl">4.9</span>
-                <span>рейтинг</span>
+                <span className="text-primary font-bold text-xl sm:text-2xl">24/7</span>
+                <span>поддержка</span>
               </div>
             </div>
           </motion.div>
