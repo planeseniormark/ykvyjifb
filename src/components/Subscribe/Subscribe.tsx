@@ -72,9 +72,21 @@ export default function Subscribe() {
               Или напишите напрямую:{" "}
               <a
                 className="small-description white hover-text-grey link"
-                href="https://t.me/vlad_osipov"
+                href="https://t.me/OSIPOWLAD"
               >
                 Telegram <ArrowUpRight className={styles.inlineIcon} />
+              </a>{" "}
+              <a
+                className="small-description white hover-text-grey link"
+                href="https://t.me/YoloAgencyBot"
+              >
+                Бот заказов <ArrowUpRight className={styles.inlineIcon} />
+              </a>{" "}
+              <a
+                className="small-description white hover-text-grey link"
+                href="https://wa.me/79950961577"
+              >
+                WhatsApp <ArrowUpRight className={styles.inlineIcon} />
               </a>
             </p>
           </div>

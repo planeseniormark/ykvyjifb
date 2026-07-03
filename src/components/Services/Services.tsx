@@ -15,18 +15,22 @@ const SERVICES = [
   {
     title: "Сайты и веб-приложения",
     text: "Лендинги, корпоративные сайты, e-commerce и SaaS — от прототипа до продакшена.",
+    price: "от 30 000 ₽",
   },
   {
     title: "Telegram-боты и Mini Apps",
     text: "Автоматизация продаж и сервисов внутри Telegram: боты, мини-приложения, интеграции с CRM.",
+    price: "от 15 000 ₽",
   },
   {
     title: "Маркетинг и продвижение",
     text: "Стратегия, перформанс-реклама и контент, которые дают измеримый рост выручки.",
+    price: "от 15 000 ₽/мес",
   },
   {
     title: "AI-автоматизация",
     text: "Чат-боты на GigaChat и GPT, автоматизация процессов и внутренние AI-инструменты.",
+    price: "от 80 000 ₽",
   },
 ];
 
@@ -50,27 +54,14 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <motion.div className="services-content-container" {...fadeUp}>
-          <div className="services-content-container-border" />
-          <div className="services-content-container-top" />
-          <div className="services-content-container-bottom" />
-          <div className="services-content-container-left" />
-          <div className="services-content-container-right" />
-          <video
-            className="services-content-video"
-            src="/videos/websites1.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-        </motion.div>
-
         <motion.div className={styles.grid} {...fadeUp}>
           {SERVICES.map((s) => (
             <div className={styles.card} key={s.title}>
               <div className={styles.cardTop}>
-                <p className="small-subheadline white">{s.title}</p>
+                <div className={styles.cardTitleRow}>
+                  <p className="small-subheadline white">{s.title}</p>
+                  <p className={`small-description grey ${styles.cardPrice}`}>{s.price}</p>
+                </div>
                 <p className="small-description grey">{s.text}</p>
               </div>
               <div className={styles.cardIcon}>

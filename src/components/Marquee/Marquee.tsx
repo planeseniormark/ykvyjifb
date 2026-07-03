@@ -17,7 +17,7 @@ export default function Marquee() {
   return (
     <div className={styles.marquee}>
       <p className={`small-description grey ${styles.title}`}>
-        С нами работают команды из
+        У нас есть опыт с такими компаниями как
       </p>
       <div className={styles.track}>
         <div className={styles.row}>

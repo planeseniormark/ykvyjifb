@@ -97,6 +97,19 @@
   max-width: 85%;
   padding: 0.75vw 1vw;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  -webkit-user-select: text;
+  user-select: text;
+}
+.message * {
+  -webkit-user-select: text;
+  user-select: text;
+}
+.message strong {
+  font-weight: 600;
+  color: #fff;
 }
 .messageBot {
   align-self: flex-start;

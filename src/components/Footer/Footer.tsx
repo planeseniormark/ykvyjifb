@@ -1,6 +1,6 @@
 "use client";
 
-import { Send, Mail } from "lucide-react";
+import { Send, Mail, Bot, Phone } from "lucide-react";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -50,9 +50,21 @@ export default function Footer() {
             <p className="small-description grey">Связаться</p>
             <a
               className={`small-description white hover-text-grey ${styles.socialLink}`}
-              href="https://t.me/vlad_osipov"
+              href="https://t.me/OSIPOWLAD"
             >
-              <Send className={styles.socialIcon} /> Telegram
+              <Send className={styles.socialIcon} /> Telegram @OSIPOWLAD
+            </a>
+            <a
+              className={`small-description white hover-text-grey ${styles.socialLink}`}
+              href="https://t.me/YoloAgencyBot"
+            >
+              <Bot className={styles.socialIcon} /> Бот заказов
+            </a>
+            <a
+              className={`small-description white hover-text-grey ${styles.socialLink}`}
+              href="https://wa.me/79950961577"
+            >
+              <Phone className={styles.socialIcon} /> WhatsApp +7 995 096-15-77
             </a>
             <a
               className={`small-description white hover-text-grey ${styles.socialLink}`}

@@ -39,7 +39,7 @@ export default function Globe() {
                 <div className="globe-container-button-row">
                   <div className="globe-container-button-active" />
                   <p className="small-description white">
-                    Свободно место на этот месяц
+                    Свободные места на этот месяц
                   </p>
                 </div>
                 <div className="button-circle">

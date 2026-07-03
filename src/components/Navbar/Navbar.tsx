@@ -94,7 +94,7 @@ export default function Navbar() {
             </p>
           </div>
           <div className={styles.menuSocial}>
-            <a href="https://t.me/yolo_agency_bot" aria-label="Telegram">
+            <a href="https://t.me/YoloAgencyBot" aria-label="Telegram">
               <Send className={styles.menuSocialIcon} />
             </a>
           </div>
