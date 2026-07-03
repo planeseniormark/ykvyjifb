@@ -62,7 +62,14 @@ const SYSTEM_PROMPT = `Ты — AI-помощник digital-агентства Y
 let cachedToken: string | null = null;
 let tokenExpiry = 0;
 
+function disableTLS() {
+  if (typeof process !== "undefined") {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+  }
+}
+
 async function getAccessToken(): Promise<string> {
+  disableTLS();
   if (cachedToken && Date.now() < tokenExpiry) {
     return cachedToken;
   }
