@@ -1,0 +1,15 @@
+.subscribe {
+  height: fit-content;
+}
+.inlineIcon {
+  width: 0.8vw;
+  height: 0.8vw;
+  display: inline;
+  vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .inlineIcon {
+    width: 3vw;
+    height: 3vw;
+  }
+}
