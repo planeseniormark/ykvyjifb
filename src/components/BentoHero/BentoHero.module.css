@@ -1,0 +1,48 @@
+.bento {
+  height: fit-content;
+  flex-direction: column;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  width: 100%;
+  display: flex;
+}
+.textbox {
+  position: relative;
+  z-index: 2;
+}
+.heroDescription {
+  max-width: 42vw;
+}
+.bentoColCenter {
+  flex: 1;
+}
+.bentoCardCta {
+  cursor: pointer;
+}
+.ctaContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+  text-align: center;
+  padding: 1.5vw;
+  pointer-events: none;
+}
+.ctaContent button {
+  pointer-events: all;
+}
+@media (max-width: 768px) {
+  .bento {
+    padding-top: 27.5vw;
+    padding-bottom: 15vw;
+  }
+  .heroDescription {
+    max-width: 85vw;
+  }
+  .ctaContent {
+    gap: 2.5vw;
+    padding: 4vw;
+  }
+}

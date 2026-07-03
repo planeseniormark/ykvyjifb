@@ -1,0 +1,19 @@
+.kpi {
+  height: fit-content;
+  display: flex;
+}
+.row {
+  justify-content: center;
+}
+.number {
+  font-family: "SF PRO DISPLAY 700", sans-serif;
+  font-weight: 700;
+  font-size: 8vw;
+  line-height: 100%;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .number {
+    font-size: 15vw;
+  }
+}

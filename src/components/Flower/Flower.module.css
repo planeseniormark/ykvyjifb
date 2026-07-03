@@ -1,0 +1,15 @@
+.flower {
+  height: fit-content;
+}
+.text {
+  max-width: 70vw;
+  text-align: center;
+}
+.char {
+  will-change: opacity;
+}
+@media (max-width: 768px) {
+  .text {
+    max-width: 90vw;
+  }
+}

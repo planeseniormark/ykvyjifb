@@ -1,0 +1,90 @@
+.footer {
+  width: 100%;
+  height: fit-content;
+  background-color: #010101;
+  padding: 7.5vh 10vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  max-width: 20vw;
+}
+.logo {
+  width: auto;
+  height: 5vh;
+  align-self: flex-start;
+}
+.nav,
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+.nav p {
+  cursor: pointer;
+  width: fit-content;
+}
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  text-decoration: none;
+  width: fit-content;
+}
+.socialIcon {
+  width: 1vw;
+  height: 1vw;
+}
+.bottom {
+  width: 100%;
+  padding-top: 3vh;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.075);
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 15vw 5vw;
+  }
+  .top {
+    flex-direction: column;
+    gap: 10vw;
+  }
+  .left {
+    max-width: 100%;
+    gap: 5vw;
+  }
+  .logo {
+    height: 10vw;
+  }
+  .nav,
+  .socials {
+    gap: 4vw;
+  }
+  .socialLink {
+    gap: 2vw;
+  }
+  .socialIcon {
+    width: 4vw;
+    height: 4vw;
+  }
+  .bottom {
+    padding-top: 7.5vw;
+  }
+}

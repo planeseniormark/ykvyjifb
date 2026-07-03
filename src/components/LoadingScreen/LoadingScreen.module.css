@@ -1,0 +1,128 @@
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 400;
+  display: grid;
+  place-items: center;
+  background-color: #010001;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  pointer-events: all;
+}
+.screenHidden {
+  animation: fade-out 0.25s ease-in-out 0.25s forwards;
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.cubes {
+  display: flex;
+  gap: 4vw;
+}
+.cubeScene {
+  width: 8vw;
+  height: 8vw;
+  perspective: 40vw;
+}
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: cube-spin 2.5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+@keyframes cube-spin {
+  0% {
+    transform: rotateX(-10deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(-10deg) rotateY(180deg);
+  }
+  to {
+    transform: rotateX(-10deg) rotateY(360deg);
+  }
+}
+.cubeFace {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  background: linear-gradient(145deg, #1a1a1a 0%, #050505 60%, #000 100%);
+  box-shadow:
+    inset 0 0 0 1px hsla(0, 0%, 100%, 0.12),
+    inset 0 0 2vw hsla(0, 0%, 100%, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cubeFront {
+  transform: translateZ(4vw);
+}
+.cubeBack {
+  transform: rotateY(180deg) translateZ(4vw);
+}
+.cubeLeft {
+  transform: rotateY(-90deg) translateZ(4vw);
+}
+.cubeRight {
+  transform: rotateY(90deg) translateZ(4vw);
+}
+.cubeTop {
+  transform: rotateX(90deg) translateZ(4vw);
+}
+.cubeBottom {
+  transform: rotateX(-90deg) translateZ(4vw);
+}
+.cubeLetters {
+  font-family: "SF PRO DISPLAY 700", sans-serif;
+  font-weight: 700;
+  font-size: 3.25vw;
+  color: #f5f5f5;
+  text-shadow:
+    0 2px 0 #999,
+    0 4px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.05em;
+}
+@media (max-width: 768px) {
+  .cubes {
+    gap: 10vw;
+  }
+  .cubeScene {
+    width: 22vw;
+    height: 22vw;
+    perspective: 110vw;
+  }
+  .cubeFace {
+    width: 22vw;
+    height: 22vw;
+  }
+  .cubeFront {
+    transform: translateZ(11vw);
+  }
+  .cubeBack {
+    transform: rotateY(180deg) translateZ(11vw);
+  }
+  .cubeLeft {
+    transform: rotateY(-90deg) translateZ(11vw);
+  }
+  .cubeRight {
+    transform: rotateY(90deg) translateZ(11vw);
+  }
+  .cubeTop {
+    transform: rotateX(90deg) translateZ(11vw);
+  }
+  .cubeBottom {
+    transform: rotateX(-90deg) translateZ(11vw);
+  }
+  .cubeLetters {
+    font-size: 9vw;
+  }
+}
